@@ -1,6 +1,9 @@
 body {
-  color: cadetblue;
-  background: darkslateblue;
+  color: whitesmoke;
+  background: black;
   width: 100%;
-  min-height: 100vh;
+}
+
+.small-pic {
+  width: 50px;
 }
