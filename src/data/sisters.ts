@@ -6,8 +6,8 @@ export const sisters: Sister[] = [
     name: "Alcyone",
     order: 1,
     position: {
-      xPercent: 44,
-      yPercent: 26
+      xPercent: 29,
+      yPercent: 57
     },
     coordinates: {
       rightAscension: "3h 47m 29s",
@@ -26,8 +26,8 @@ export const sisters: Sister[] = [
     name: "Electra",
     order: 2,
     position: {
-      xPercent: 57,
-      yPercent: 31
+      xPercent: 69,
+      yPercent: 54
     },
     coordinates: {
       rightAscension: "3h 44m 53s",
@@ -46,8 +46,8 @@ export const sisters: Sister[] = [
     name: "Merope",
     order: 3,
     position: {
-      xPercent: 51,
-      yPercent: 44
+      xPercent: 47,
+      yPercent: 70
     },
     coordinates: {
       rightAscension: "3h 46m 20s",
@@ -66,8 +66,8 @@ export const sisters: Sister[] = [
     name: "Maia",
     order: 4,
     position: {
-      xPercent: 39,
-      yPercent: 49
+      xPercent: 53,
+      yPercent: 28
     },
     coordinates: {
       rightAscension: "3h 45m 50s",
@@ -86,8 +86,8 @@ export const sisters: Sister[] = [
     name: "Taygeta",
     order: 5,
     position: {
-      xPercent: 61,
-      yPercent: 56
+      xPercent: 63,
+      yPercent: 18
     },
     coordinates: {
       rightAscension: "3h 45m 13s",
@@ -106,8 +106,8 @@ export const sisters: Sister[] = [
     name: "Celaeno",
     order: 6,
     position: {
-      xPercent: 46,
-      yPercent: 63
+      xPercent: 71,
+      yPercent: 34
     },
     coordinates: {
       rightAscension: "3h 44m 48s",
@@ -126,8 +126,8 @@ export const sisters: Sister[] = [
     name: "Asterope (& Sterope)",
     order: 7,
     position: {
-      xPercent: 34,
-      yPercent: 67
+      xPercent: 52,
+      yPercent: 10
     },
     coordinates: {
       rightAscension: "3h 45m 54s",
