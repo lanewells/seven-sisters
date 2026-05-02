@@ -80,7 +80,7 @@ export function SisterPage({ sister, onBack }: SisterPageProps) {
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-white/55">
-              Placeholder for a text.
+              placeholder for text
             </p>
           </article>
 
@@ -96,7 +96,7 @@ export function SisterPage({ sister, onBack }: SisterPageProps) {
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-white/55">
-              placeholder for visual stuff
+              placeholder for visual stuff or anecdote about the build
             </p>
           </article>
 
@@ -125,12 +125,12 @@ export function SisterPage({ sister, onBack }: SisterPageProps) {
               </p>
 
               <h2 className="mt-4 text-3xl font-light uppercase tracking-[0.16em]">
-                text
+                description of gallery
               </h2>
             </div>
 
             <p className="hidden max-w-xs text-right text-xs uppercase leading-6 tracking-[0.25em] text-white/35 md:block">
-              placeholder image field
+              placeholder - the imgs could link to other sources
             </p>
           </div>
 

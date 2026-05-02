@@ -17,8 +17,8 @@ export function StarButton({
     <div
       className="absolute"
       style={{
-        left: `${sister.x}%`,
-        top: `${sister.y}%`
+        left: `${sister.position.xPercent}%`,
+        top: `${sister.position.yPercent}%`
       }}
     >
       <button

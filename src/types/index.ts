@@ -2,8 +2,14 @@ export type Sister = {
   id: string
   name: string
   order: number
-  x: number
-  y: number
+  position: {
+    xPercent: number
+    yPercent: number
+  }
+  coordinates: {
+    rightAscension: string
+    declination: string
+  }
   color: string
   glow: string
   accentText: string
