@@ -6,4 +6,8 @@ export type Sister = {
   y: number
   color: string
   glow: string
+  accentText: string
+  subtitle: string
+  description: string
+  keywords: string[]
 }

@@ -66,7 +66,7 @@ export function PleiadesMap({ onEnterSister }: PleiadesMapProps) {
               </h2>
 
               <p className="mt-4 text-sm leading-7 text-blue-100/60">
-                Enter to open this stars page
+                {hoveredSister.subtitle}
               </p>
             </div>
           )}
