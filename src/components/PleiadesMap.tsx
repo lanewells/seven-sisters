@@ -31,7 +31,7 @@ export function PleiadesMap({ onEnterSister }: PleiadesMapProps) {
         }`}
       >
         <p className="mb-5 text-xs uppercase tracking-[0.5em] text-blue-100/50">
-          A constellation archive
+          A celestial experience landing in Black Rock City 2026
         </p>
 
         <h1 className="text-center text-5xl font-light uppercase tracking-[0.22em] text-white md:text-7xl">
