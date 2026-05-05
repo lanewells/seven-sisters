@@ -5,6 +5,8 @@ type PasswordGateProps = {
 }
 
 export default function PasswordGate({ children }: PasswordGateProps) {
+  console.log("PasswordGate rendered")
+  console.log("Password exists:", Boolean(import.meta.env.VITE_SITE_PASSWORD))
   const [hasAccess, setHasAccess] = useState(
     localStorage.getItem("site_access") === "true"
   )
