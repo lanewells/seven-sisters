@@ -38,7 +38,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
           </p>
 
           <h1 className="text-3xl font-semibold tracking-tight">
-            Continue to site
+            Continue to 7 Sisters
           </h1>
 
           <p className="mt-3 text-sm leading-6 text-neutral-400">
