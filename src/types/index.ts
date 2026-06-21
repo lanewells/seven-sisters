@@ -17,3 +17,5 @@ export type Sister = {
   description: string
   keywords: string[]
 }
+
+export type Page = "home" | "about" | "volunteer" | "gallery" | "contact"

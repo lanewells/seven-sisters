@@ -35,7 +35,7 @@ export function PleiadesMap({ onEnterSister }: PleiadesMapProps) {
         </p>
 
         <h1 className="text-center text-5xl font-light uppercase tracking-[0.22em] text-white md:text-7xl">
-          The Seven Sisters
+          Seven Sisters
         </h1>
 
         <div className="relative mt-14 h-[24rem] w-full max-w-3xl md:h-[30rem]">
