@@ -4,12 +4,12 @@ export function Navbar() {
   return (
     <header className="fixed left-0 top-0 z-50 w-full px-6 py-6 md:px-10">
       <nav className="mx-auto flex max-w-7xl items-center justify-between">
-        <a
+        {/* <a
           href="#home"
           className="text-xs font-medium uppercase tracking-[0.35em] text-white/70 transition hover:text-white"
         >
-          Seven Sisters
-        </a>
+          Home
+        </a> */}
 
         <div className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (

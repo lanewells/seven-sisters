@@ -27,7 +27,7 @@ export function StarButton({
         onMouseLeave={() => onHover(null)}
         onFocus={() => onHover(sister)}
         onBlur={() => onHover(null)}
-        onClick={() => onEnter(sister)}
+        //       onClick={() => onEnter(sister)}
         className="group relative -translate-x-1/2 -translate-y-1/2"
         aria-label={`Enter ${sister.name}`}
       >
