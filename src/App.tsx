@@ -14,24 +14,28 @@ function App() {
 
   return (
     <>
-      <Navbar onNavigate={setPage} />
+      <div className="flex min-h-screen flex-col">
+        <Navbar onNavigate={setPage} />
 
-      {page === "about" ? (
-        <AboutPage onBack={() => setPage("home")} />
-      ) : page === "gallery" ? (
-        <GalleryPage onBack={() => setPage("home")} />
-      ) : page === "contact" ? (
-        <ContactPage onBack={() => setPage("home")} />
-      ) : selectedSister ? (
-        <SisterPage
-          sister={selectedSister}
-          onBack={() => setSelectedSister(null)}
-        />
-      ) : (
-        <PleiadesMap onEnterSister={setSelectedSister} />
-      )}
+        <div className="flex-1">
+          {page === "about" ? (
+            <AboutPage onBack={() => setPage("home")} />
+          ) : page === "gallery" ? (
+            <GalleryPage onBack={() => setPage("home")} />
+          ) : page === "contact" ? (
+            <ContactPage onBack={() => setPage("home")} />
+          ) : selectedSister ? (
+            <SisterPage
+              sister={selectedSister}
+              onBack={() => setSelectedSister(null)}
+            />
+          ) : (
+            <PleiadesMap onEnterSister={setSelectedSister} />
+          )}
+        </div>
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   )
 }

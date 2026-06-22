@@ -4,7 +4,7 @@ type AboutPageProps = {
 
 export function AboutPage({ onBack }: AboutPageProps) {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#020106] px-6 py-28 text-white">
+    <main className="relative min-h-full overflow-hidden bg-[#020106] px-6 py-28 text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_24%,rgba(88,28,135,0.25),transparent_28%),radial-gradient(circle_at_72%_68%,rgba(30,64,175,0.18),transparent_32%),#020106]" />
 
       <div className="stars-bg absolute inset-0 opacity-50" />

@@ -10,10 +10,15 @@ type PleiadesMapProps = {
 export function PleiadesMap({}: PleiadesMapProps) {
   const [hoveredSister, setHoveredSister] = useState<Sister | null>(null)
 
+  const handleSelect = (sister: Sister) => {
+    setHoveredSister(sister)
+  }
+
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-28"
+      onClick={() => setHoveredSister(null)}
+      className="relative flex min-h-full items-center justify-center overflow-hidden px-6 py-20"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(88,28,135,0.24),transparent_32%),radial-gradient(circle_at_70%_62%,rgba(30,64,175,0.18),transparent_28%),#020106]" />
 
@@ -30,7 +35,7 @@ export function PleiadesMap({}: PleiadesMapProps) {
           hoveredSister ? "scale-105" : "scale-100"
         }`}
       >
-        <p className="mb-5 text-xs uppercase tracking-[0.5em] text-blue-100/50">
+        <p className="mb-5 text-center text-xs uppercase tracking-[0.5em] text-blue-100/50">
           A celestial experience landing in Black Rock City 2026
         </p>
 
@@ -38,7 +43,7 @@ export function PleiadesMap({}: PleiadesMapProps) {
           Seven Sisters
         </h1>
 
-        <div className="relative mt-14 h-[24rem] w-full max-w-3xl md:h-[30rem]">
+        <div className="relative mt-12 h-[24rem] w-full max-w-3xl md:h-[30rem]">
           <div
             className={`absolute inset-0 transition duration-700 ${
               hoveredSister ? "scale-110 opacity-100" : "scale-100 opacity-80"
@@ -50,12 +55,13 @@ export function PleiadesMap({}: PleiadesMapProps) {
                 sister={sister}
                 isActive={hoveredSister?.id === sister.id}
                 onHover={setHoveredSister}
+                onSelect={handleSelect}
               />
             ))}
           </div>
 
           {hoveredSister && (
-            <div className="pointer-events-none absolute left-1/2 top-[82%] w-full max-w-md -translate-x-1/2 text-center">
+            <div className="pointer-events-none absolute left-1/2 top-[78%] w-full max-w-md -translate-x-1/2 px-6 text-center">
               <p className="text-xs uppercase tracking-[0.45em] text-white/50">
                 {String(hoveredSister.order).padStart(2, "0")}
               </p>
