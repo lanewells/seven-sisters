@@ -28,17 +28,24 @@ export function ContactPage({ onBack }: ContactPageProps) {
         <p className="mt-16 text-lg leading-9 text-blue-100/70">
           If you'd like to be emailed regarding build updates, volunteer &
           fundraising opportunities, and on-playa event announcements, please
-          reach out to us at
+          reach out to us at{" "}
           <a
-            href="mailto:7sisters.starts@gmail.com"
-            className="transition hover:text-white"
+            href="mailto:7sisters.stars@gmail.com"
+            className="transition hover:text-white underline"
           >
-            <strong> 7sisters.stars@gmail.com</strong>
+            7sisters.stars@gmail.com
           </a>
           .
         </p>
 
-        <p className="mt-10 text-sm text-white/40">Website by Lane Wells</p>
+        <p className="mt-16 text-lg leading-9 text-blue-100/70">
+          <a
+            href="https://github.com/lanewells/seven-sisters"
+            className="transition hover:text-white/100 underline"
+          >
+            Website by Lane Wells
+          </a>
+        </p>
       </section>
     </main>
   )
