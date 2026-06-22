@@ -7,7 +7,7 @@ export function Navbar({ onNavigate }: NavbarProps) {
 
   return (
     <header
-      className="fixed left-0 top-0 z-50 w-full bg-[#020106]/40 backdrop-blur-xl px-6 py-6 md:px-10"
+      className="fixed left-0 top-0 z-50 w-full bg-[#020106]/40 backdrop-blur-lg px-6 py-6 md:px-10"
       style={{
         maskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",
         WebkitMaskImage:
