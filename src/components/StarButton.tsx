@@ -4,15 +4,10 @@ type StarButtonProps = {
   sister: Sister
   isActive: boolean
   onHover: (sister: Sister | null) => void
-  onEnter: (sister: Sister) => void
+  onEnter?: (sister: Sister) => void
 }
 
-export function StarButton({
-  sister,
-  isActive,
-  onHover,
-  onEnter
-}: StarButtonProps) {
+export function StarButton({ sister, isActive, onHover }: StarButtonProps) {
   return (
     <div
       className="absolute"

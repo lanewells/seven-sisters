@@ -4,10 +4,10 @@ import { sisters } from "../data/sisters"
 import { StarButton } from "./StarButton"
 
 type PleiadesMapProps = {
-  onEnterSister: (sister: Sister) => void
+  onEnterSister?: (sister: Sister) => void
 }
 
-export function PleiadesMap({ onEnterSister }: PleiadesMapProps) {
+export function PleiadesMap({}: PleiadesMapProps) {
   const [hoveredSister, setHoveredSister] = useState<Sister | null>(null)
 
   return (
@@ -50,7 +50,6 @@ export function PleiadesMap({ onEnterSister }: PleiadesMapProps) {
                 sister={sister}
                 isActive={hoveredSister?.id === sister.id}
                 onHover={setHoveredSister}
-                onEnter={onEnterSister}
               />
             ))}
           </div>
