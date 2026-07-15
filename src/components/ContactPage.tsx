@@ -29,12 +29,14 @@ export function ContactPage({ onBack }: ContactPageProps) {
           If you'd like to be emailed regarding build updates, volunteer &
           fundraising opportunities, and on-playa event announcements, please
           reach out to us at{" "}
-          <a
-            href="mailto:7sisters.stars@gmail.com"
-            className="transition hover:text-white underline"
-          >
-            7sisters.stars@gmail.com
-          </a>
+          <span className="font-bold">
+            <a
+              href="mailto:7sisters.stars@gmail.com"
+              className="transition hover:text-white underline"
+            >
+              7sisters.stars@gmail.com
+            </a>
+          </span>
           .
         </p>
         <h3 className="mt-16 text-2xl font-light uppercase tracking-[0.18em] md:text-3xl">
@@ -43,20 +45,34 @@ export function ContactPage({ onBack }: ContactPageProps) {
         <p className="mt-8 text-lg leading-9 text-blue-100/70">
           Please consider donating at this link to help make this piece
           possible: <br />
-          <a
-            href="https://crowdfundr.com/campaigns/72kDN5/pay?perk=9Z943"
-            className="transition hover:text-white underline"
-          >
-            Donate on crowdfundr
-          </a>
+          <span className="font-bold">
+            <a
+              href="https://crowdfundr.com/campaigns/72kDN5/pay?perk=9Z943"
+              className="text-blue-300/100 transition hover:text-white underline"
+            >
+              Donate on crowdfundr
+            </a>
+          </span>
         </p>
 
-        <p className="mt-16 text-lg leading-9 text-blue-100/70">
+        <h3 className="mt-16 text-2xl font-light uppercase tracking-[0.18em] md:text-3xl">
+          July 25th Fundraiser
+        </h3>
+        <div className="mt-8">
+          <img
+            src="/assets/poster-image.jpg"
+            alt="Event poster image"
+            className="rounded-xl border border-white/50"
+          />
+        </div>
+
+        <p className="mt-16 text-lg leading-9 text-blue-100/70 font-bold">
+          Website by{" "}
           <a
             href="https://github.com/lanewells/seven-sisters"
-            className="transition hover:text-white/100 underline"
+            className="text-blue-300/100 transition hover:text-white/100 underline"
           >
-            Website by Lane Wells
+            Lane Wells
           </a>
         </p>
       </section>
