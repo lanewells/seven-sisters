@@ -37,6 +37,19 @@ export function ContactPage({ onBack }: ContactPageProps) {
           </a>
           .
         </p>
+        <h3 className="mt-16 text-2xl font-light uppercase tracking-[0.18em] md:text-3xl">
+          Donate
+        </h3>
+        <p className="mt-8 text-lg leading-9 text-blue-100/70">
+          Please consider donating at this link to help make this piece
+          possible: <br />
+          <a
+            href="https://crowdfundr.com/campaigns/72kDN5/pay?perk=9Z943"
+            className="transition hover:text-white underline"
+          >
+            Donate on crowdfundr
+          </a>
+        </p>
 
         <p className="mt-16 text-lg leading-9 text-blue-100/70">
           <a
