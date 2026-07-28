@@ -1,14 +1,14 @@
 import { useState } from "react"
 
 type NavbarProps = {
-  onNavigate: (page: "home" | "about" | "gallery" | "contact") => void
+  onNavigate: (page: "home" | "about" | "gallery" | "contribute") => void
 }
 
 export function Navbar({ onNavigate }: NavbarProps) {
-  const navItems = ["About", "Gallery", "Contact"] as const
+  const navItems = ["About", "Gallery", "Contribute"] as const
   const [open, setOpen] = useState(false)
 
-  const go = (page: "home" | "about" | "gallery" | "contact") => {
+  const go = (page: "home" | "about" | "gallery" | "contribute") => {
     onNavigate(page)
     setOpen(false)
   }
@@ -29,7 +29,7 @@ export function Navbar({ onNavigate }: NavbarProps) {
             <button
               key={item}
               onClick={() =>
-                go(item.toLowerCase() as "about" | "gallery" | "contact")
+                go(item.toLowerCase() as "about" | "gallery" | "contribute")
               }
               className="text-xs font-medium uppercase tracking-[0.32em] text-white/60 transition hover:text-white"
             >
@@ -66,7 +66,7 @@ export function Navbar({ onNavigate }: NavbarProps) {
             <button
               key={item}
               onClick={() =>
-                go(item.toLowerCase() as "about" | "gallery" | "contact")
+                go(item.toLowerCase() as "about" | "gallery" | "contribute")
               }
               className="text-center text-lg font-light uppercase tracking-[0.3em] text-white/80 transition hover:text-white"
             >

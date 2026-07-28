@@ -18,4 +18,4 @@ export type Sister = {
   keywords: string[]
 }
 
-export type Page = "home" | "about" | "volunteer" | "gallery" | "contact"
+export type Page = "home" | "about" | "gallery" | "contribute"

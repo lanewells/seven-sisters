@@ -6,7 +6,7 @@ import { PleiadesMap } from "./components/PleiadesMap"
 import { SisterPage } from "./components/SisterPage"
 import { AboutPage } from "./components/AboutPage"
 import { GalleryPage } from "./components/GalleryPage"
-import { ContactPage } from "./components/ContactPage"
+import { ContributePage } from "./components/ContributePage"
 
 function App() {
   const [selectedSister, setSelectedSister] = useState<Sister | null>(null)
@@ -22,8 +22,8 @@ function App() {
             <AboutPage onBack={() => setPage("home")} />
           ) : page === "gallery" ? (
             <GalleryPage onBack={() => setPage("home")} />
-          ) : page === "contact" ? (
-            <ContactPage onBack={() => setPage("home")} />
+          ) : page === "contribute" ? (
+            <ContributePage onBack={() => setPage("home")} />
           ) : selectedSister ? (
             <SisterPage
               sister={selectedSister}
