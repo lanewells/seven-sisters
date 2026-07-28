@@ -39,21 +39,19 @@ export function GalleryPage({ onBack }: GalleryPageProps) {
         </h1>
 
         <div className="border-t border-white/10 py-16">
-          <div className="mb-8 flex items-end justify-between gap-6">
-            <div className="grid gap-4 md:grid-cols-2">
-              {images.map((src, index) => (
-                <div key={index} className="relative">
-                  <div className="absolute -inset-4 rounded-2xl bg-sky-400/20 blur-3xl" />
-                  <div className="relative overflow-hidden rounded-xl border border-white/20">
-                    <img
-                      src={src}
-                      alt={`Night render ${index}`}
-                      className="block w-full"
-                    />
-                  </div>
+          <div className="columns-1 gap-4 md:columns-2">
+            {images.map((src, index) => (
+              <div key={index} className="relative mb-4 break-inside-avoid">
+                <div className="absolute -inset-4 rounded-2xl bg-sky-400/20 blur-3xl" />
+                <div className="relative overflow-hidden rounded-xl border border-white/20">
+                  <img
+                    src={src}
+                    alt={`Night render ${index}`}
+                    className="block w-full"
+                  />
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
