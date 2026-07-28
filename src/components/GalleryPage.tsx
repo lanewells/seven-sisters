@@ -4,12 +4,16 @@ type GalleryPageProps = {
 
 export function GalleryPage({ onBack }: GalleryPageProps) {
   const images = [
-    "/assets/night-render-1.jpg",
-    "/assets/night-render-2.jpg",
-    "/assets/night-render-3.jpg",
-    "/assets/night-render-4.jpg",
-    "/assets/night-render-5.jpg",
-    "/assets/night-render-6.jpg"
+    "/assets/render-1.png",
+    "/assets/render-2.png",
+    "/assets/render-3.png",
+    "/assets/render-4.png",
+    "/assets/render-5.png",
+    "/assets/render-6.jpg",
+    "/assets/render-7.jpg",
+    "/assets/render-8.jpg",
+    "/assets/render-9.jpg",
+    "/assets/render-10.jpg"
   ]
   return (
     <main className="relative min-h-full overflow-hidden bg-[#020106] px-6 py-28 text-white">
