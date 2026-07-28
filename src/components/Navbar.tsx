@@ -22,46 +22,90 @@ export function Navbar({ onNavigate }: NavbarProps) {
           "linear-gradient(to bottom, black 90%, transparent 100%)"
       }}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-end">
-        {/* desktop */}
-        <div className="hidden items-center gap-8 md:flex">
-          {navItems.map((item) => (
-            <button
-              key={item}
-              onClick={() =>
-                go(item.toLowerCase() as "about" | "gallery" | "contribute")
-              }
-              className="text-xs font-medium uppercase tracking-[0.32em] text-white/60 transition hover:text-white"
-            >
-              {item}
-            </button>
-          ))}
-        </div>
-
-        {/* mobile toggle */}
-        <button
-          onClick={() => setOpen((v) => !v)}
-          className="text-white/70 transition hover:text-white md:hidden"
-          aria-label="Toggle menu"
-          aria-expanded={open}
+      <div className="mx-auto flex max-w-7xl items-center justify-between">
+        {/* Left */}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://crowdfundr.com/campaigns/72kDN5/pay?perk=9Z943"
+          className="
+        hidden md:inline-flex
+        items-center
+        rounded-full
+        border border-white/15
+        bg-white/[0.03]
+        px-4 py-2
+        text-xs font-medium uppercase tracking-[0.28em]
+        text-white/75
+        transition-all
+        hover:border-white/30
+        hover:bg-white/[0.08]
+        hover:text-white
+      "
         >
-          <div className="space-y-1.5">
-            <span
-              className={`block h-px w-6 bg-current transition ${open ? "translate-y-[7px] rotate-45" : ""}`}
-            />
-            <span
-              className={`block h-px w-6 bg-current transition ${open ? "opacity-0" : ""}`}
-            />
-            <span
-              className={`block h-px w-6 bg-current transition ${open ? "-translate-y-[7px] -rotate-45" : ""}`}
-            />
-          </div>
-        </button>
-      </nav>
+          Donate
+        </a>
 
+        <nav className="flex items-center">
+          {/* desktop */}
+          <div className="hidden items-center gap-8 md:flex">
+            {navItems.map((item) => (
+              <button
+                key={item}
+                onClick={() =>
+                  go(item.toLowerCase() as "about" | "gallery" | "contribute")
+                }
+                className="text-xs font-medium uppercase tracking-[0.32em] text-white/60 transition hover:text-white"
+              >
+                {item}
+              </button>
+            ))}
+          </div>
+
+          {/* mobile toggle lines */}
+          <button
+            onClick={() => setOpen((v) => !v)}
+            className="text-white/70 transition hover:text-white md:hidden"
+            aria-label="Toggle menu"
+            aria-expanded={open}
+          >
+            <div className="space-y-1.5">
+              <span
+                className={`block h-px w-6 bg-current transition ${open ? "translate-y-[7px] rotate-45" : ""}`}
+              />
+              <span
+                className={`block h-px w-6 bg-current transition ${open ? "opacity-0" : ""}`}
+              />
+              <span
+                className={`block h-px w-6 bg-current transition ${open ? "-translate-y-[7px] -rotate-45" : ""}`}
+              />
+            </div>
+          </button>
+        </nav>
+      </div>
       {/* mobile dropdown */}
       {open && (
         <div className="mt-8 flex flex-col gap-6 pb-4 md:hidden">
+          <a
+            href="https://crowdfundr.com/campaigns/72kDN5/pay?perk=9Z943"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+        mx-auto inline-flex items-center
+        rounded-full
+        border border-white/15
+        bg-white/[0.03]
+        px-5 py-2.5
+        text-xs font-medium uppercase tracking-[0.28em]
+        text-white/75
+        transition-all
+        hover:border-white/30
+        hover:bg-white/[0.08]
+        hover:text-white
+      "
+          >
+            Donate
+          </a>
           {navItems.map((item) => (
             <button
               key={item}
