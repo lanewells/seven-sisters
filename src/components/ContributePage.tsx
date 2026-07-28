@@ -45,7 +45,7 @@ export function ContributePage({ onBack }: ContributePageProps) {
           possible: <br />
           <span className="font-bold">
             <a
-              href="https://crowdfundr.com/campaigns/72kDN5/pay?perk=9Z943"
+              href="https://crowdfundr.com/campaigns/72kDN5/pay?ref=ab_58aaohErQbx58aaohErQbx"
               className="text-blue-300/100 transition hover:text-white underline"
             >
               Donate on crowdfundr

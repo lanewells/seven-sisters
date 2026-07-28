@@ -15,7 +15,7 @@ export function Navbar({ onNavigate }: NavbarProps) {
 
   return (
     <header
-      className="fixed left-0 top-0 z-50 w-full bg-[#020106]/40 backdrop-blur-lg px-6 py-6 md:px-10"
+      className="fixed left-0 top-0 z-50 w-full bg-[#020106]/40 backdrop-blur-lg px-6 pt-6 pb-4 md:px-10"
       style={{
         maskImage: "linear-gradient(to bottom, black 90%, transparent 100%)",
         WebkitMaskImage:
@@ -27,14 +27,9 @@ export function Navbar({ onNavigate }: NavbarProps) {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://crowdfundr.com/campaigns/72kDN5/pay?perk=9Z943"
+          href="https://crowdfundr.com/72kDN5?ref=ab_58aaohErQbx58aaohErQbx"
           className="
-        hidden md:inline-flex
-        items-center
-        rounded-full
-        border border-white/15
-        bg-white/[0.03]
-        px-4 py-2
+        hidden md:inline-flex items-center rounded-full border border-white/15 bg-white/[0.03] px-4 py-2
         text-xs font-medium uppercase tracking-[0.28em]
         text-white/75
         transition-all
@@ -87,7 +82,7 @@ export function Navbar({ onNavigate }: NavbarProps) {
       {open && (
         <div className="mt-8 flex flex-col gap-6 pb-4 md:hidden">
           <a
-            href="https://crowdfundr.com/campaigns/72kDN5/pay?perk=9Z943"
+            href="https://crowdfundr.com/72kDN5?ref=ab_58aaohErQbx58aaohErQbx"
             target="_blank"
             rel="noopener noreferrer"
             className="
