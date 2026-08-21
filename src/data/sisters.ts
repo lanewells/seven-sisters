@@ -6,8 +6,8 @@ export const sisters: Sister[] = [
     name: "Alcyone",
     order: 1,
     position: {
-      xPercent: 29,
-      yPercent: 57
+      xPercent: 40,
+      yPercent: 48
     },
     coordinates: {
       rightAscension: "3h 47m 29s",
@@ -26,8 +26,8 @@ export const sisters: Sister[] = [
     name: "Electra",
     order: 2,
     position: {
-      xPercent: 69,
-      yPercent: 54
+      xPercent: 80,
+      yPercent: 68
     },
     coordinates: {
       rightAscension: "3h 44m 53s",
@@ -46,8 +46,8 @@ export const sisters: Sister[] = [
     name: "Merope",
     order: 3,
     position: {
-      xPercent: 47,
-      yPercent: 70
+      xPercent: 55,
+      yPercent: 73
     },
     coordinates: {
       rightAscension: "3h 46m 20s",
@@ -66,8 +66,8 @@ export const sisters: Sister[] = [
     name: "Maia",
     order: 4,
     position: {
-      xPercent: 53,
-      yPercent: 28
+      xPercent: 72,
+      yPercent: 34
     },
     coordinates: {
       rightAscension: "3h 45m 50s",
@@ -86,8 +86,8 @@ export const sisters: Sister[] = [
     name: "Taygeta",
     order: 5,
     position: {
-      xPercent: 63,
-      yPercent: 18
+      xPercent: 83,
+      yPercent: 28
     },
     coordinates: {
       rightAscension: "3h 45m 13s",
@@ -106,8 +106,8 @@ export const sisters: Sister[] = [
     name: "Celaeno",
     order: 6,
     position: {
-      xPercent: 71,
-      yPercent: 34
+      xPercent: 85,
+      yPercent: 50
     },
     coordinates: {
       rightAscension: "3h 44m 48s",
@@ -123,11 +123,11 @@ export const sisters: Sister[] = [
   },
   {
     id: "seventh-sister",
-    name: "Asterope (& Sterope)",
+    name: "Asterope",
     order: 7,
     position: {
-      xPercent: 52,
-      yPercent: 10
+      xPercent: 75,
+      yPercent: 12
     },
     coordinates: {
       rightAscension: "3h 45m 54s",
@@ -137,7 +137,46 @@ export const sisters: Sister[] = [
     glow: "shadow-sky-300/80",
     accentText: "text-sky-200",
     subtitle: "B8 Blue Dwarf",
-    description: `Asterope and Sterope are two nearby stars in the northern part of the Pleiades, forming a close optical double rather than a true binary system. Asterope, also known as 21 Tauri, is the slightly brighter northwestern star, while Sterope, or 22 Tauri, lies just southeast of it. Because Asterope was also traditionally called Sterope, the pair are sometimes labelled Sterope I and Sterope II. Sterope's spectral class is A0Vn white main sequence star, with a right ascension of 3h 46m 3s and declination of +24° 31' 40".`,
+    description: `Asterope is a star in the northern part of the Pleiades, forming a close optical double with Sterope rather than a true binary system. Asterope, also known as 21 Tauri, is the slightly brighter northwestern star, while Sterope, or 22 Tauri, lies just southeast of it. Because Asterope was also traditionally called Sterope, the pair are sometimes labelled Sterope I and Sterope II.`,
     keywords: ["return", "constellation", "elsewhere"]
+  },
+  {
+    id: "father-star",
+    name: "Atlas",
+    order: 0,
+    position: {
+      xPercent: 13,
+      yPercent: 40
+    },
+    coordinates: {
+      rightAscension: "3h 49m 9.7s",
+      declination: `+24° 3' 12"`
+    },
+    color: "bg-cyan-200",
+    glow: "shadow-cyan-300/80",
+    accentText: "text-cyan-200",
+    subtitle: "B8III blue-white giant",
+    description: "The leftmost member of the Pleiades cluster.",
+    keywords: ["atlas", "titan", "father"]
+  },
+  {
+    id: "mother-star",
+    name: "Pleione",
+    order: 0,
+    position: {
+      xPercent: 15,
+      yPercent: 30
+    },
+    coordinates: {
+      rightAscension: "3h 49m 11s",
+      declination: `+24° 8' 12"`
+    },
+    color: "bg-cyan-200",
+    glow: "shadow-cyan-300/80",
+    accentText: "text-cyan-200",
+    subtitle: "B8Vne blue-white dwarf",
+    description:
+      "Pleione was an Oceanid nymph in Greek mythology and mother of the Pleiades. Pleione presided over the multiplication of the flocks, fitting, since the meaning of her name is: 'to increase in number' (from the Greek word pleiôn πλεῖων 'more').",
+    keywords: ["mother", "matriarch", "multiplication", "Arcadia"]
   }
 ]
