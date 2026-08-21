@@ -24,7 +24,7 @@ export const sisters: Sister[] = [
   {
     id: "second-sister",
     name: "Electra",
-    order: 2,
+    order: 3,
     position: {
       xPercent: 80,
       yPercent: 68
@@ -44,7 +44,7 @@ export const sisters: Sister[] = [
   {
     id: "third-sister",
     name: "Merope",
-    order: 3,
+    order: 2,
     position: {
       xPercent: 55,
       yPercent: 73
@@ -64,7 +64,7 @@ export const sisters: Sister[] = [
   {
     id: "fourth-sister",
     name: "Maia",
-    order: 4,
+    order: 5,
     position: {
       xPercent: 72,
       yPercent: 34
@@ -84,7 +84,7 @@ export const sisters: Sister[] = [
   {
     id: "fifth-sister",
     name: "Taygeta",
-    order: 5,
+    order: 6,
     position: {
       xPercent: 83,
       yPercent: 28
@@ -104,7 +104,7 @@ export const sisters: Sister[] = [
   {
     id: "sixth-sister",
     name: "Celaeno",
-    order: 6,
+    order: 4,
     position: {
       xPercent: 85,
       yPercent: 50
@@ -171,9 +171,9 @@ export const sisters: Sister[] = [
       rightAscension: "3h 49m 11s",
       declination: `+24° 8' 12"`
     },
-    color: "bg-cyan-200",
-    glow: "shadow-cyan-300/80",
-    accentText: "text-cyan-200",
+    color: "bg-purple-200",
+    glow: "shadow-purple-300/80",
+    accentText: "text-purple-200",
     subtitle: "B8Vne blue-white dwarf",
     description:
       "Pleione was an Oceanid nymph in Greek mythology and mother of the Pleiades. Pleione presided over the multiplication of the flocks, fitting, since the meaning of her name is: 'to increase in number' (from the Greek word pleiôn πλεῖων 'more').",
